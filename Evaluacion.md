@@ -3,7 +3,7 @@
 - Para acceder a DevCloud, se puede usar la consola o Jupyter Notebooks
 - Las respuestas deben ser guardadas en un archivo con extension Markdown dentro de algún repositorio público en GitHub. [[Ver guía para escribir Markdown]](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github)
 - El URL de tal repositorio debe ser enviado a los emails de ambos docentes
-- Máximo plazo de envio: 22 Marzo AoE [[Anywhere on Earth]](https://en.wikipedia.org/wiki/Anywhere_on_Earth)
+- Máximo plazo de envio: 17 Marzo AoE [[Anywhere on Earth]](https://en.wikipedia.org/wiki/Anywhere_on_Earth)
 
 ## Preguntas
 
