@@ -13,13 +13,14 @@
 3. Acceder en modo interactivo a un nodo de cómputo con GPUs (`gen9` o `gen11`) [3 puntos]
     - Compilar y ejecutar `Nbody`
     - Proporcionar screenshot(s) de los resultados
+        - Por cada screenshot, añadir una breve descripción de los resultados
 4. Realizar un análisis de _**GPU Hotspots**_ con VTune [8 puntos]
     - Proporcionar screenshot(s) de los resultados
-      - Por cada screenshot, formular una breve descripción de los resultados
+      - Por cada screenshot, añadir una breve descripción de los resultados
 5. Realizar un análisis _**Roofline**_ con Advisor [4 puntos]
     - Indicar los hotspots en el programa (si es que hubiera)
     - Proporcionar screenshot(s) de los resultados
-      - Por cada screenshot, formular una breve descripción de los resultados
+      - Por cada screenshot, añadir una breve descripción de los resultados
     - Indicar potenciales soluciones para optimizar la ejecución del programa
 
 
