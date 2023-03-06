@@ -16,11 +16,11 @@
     - Proporcionar screenshot(s) de los resultados
         - Por cada screenshot, añadir una breve descripción
 4. Realizar un análisis de _**GPU Hotspots**_ con VTune [8 puntos]
-    - Indicar los hotspots en el programa
+    - Indicar los hotspots del programa
     - Proporcionar screenshot(s) de los resultados
       - Por cada screenshot, añadir una breve descripción
 5. Realizar un análisis _**Roofline**_ con Advisor [4 puntos]
-    - Indicar los hotspots en el programa
+    - Indicar los hotspots del programa
     - Proporcionar screenshot(s) de los resultados
       - Por cada screenshot, añadir una breve descripción
     - Indicar potenciales soluciones para optimizar la ejecución del programa
