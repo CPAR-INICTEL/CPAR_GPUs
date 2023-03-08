@@ -1,0 +1,87 @@
+callchain: type DWARF
+callchain: stack dump size 1024
+threads_spec: cpu
+Using CPUID GenuineIntel-6-8D-1
+DEBUGINFOD_URLS=
+Compression enabled, disabling build id collection at the end of the session.
+nr_threads: 16
+thread_masks[0]: 0x560905e991f0: maps mask[16]: 0
+thread_masks[0]: 0x560905e99200: affinity mask[16]: 0
+thread_masks[1]: 0x560905e99210: maps mask[16]: 1
+thread_masks[1]: 0x560905e99220: affinity mask[16]: 1
+thread_masks[2]: 0x560905e99230: maps mask[16]: 2
+thread_masks[2]: 0x560905e99240: affinity mask[16]: 2
+thread_masks[3]: 0x560905e99250: maps mask[16]: 3
+thread_masks[3]: 0x560905e99260: affinity mask[16]: 3
+thread_masks[4]: 0x560905e99270: maps mask[16]: 4
+thread_masks[4]: 0x560905e99280: affinity mask[16]: 4
+thread_masks[5]: 0x560905e99290: maps mask[16]: 5
+thread_masks[5]: 0x560905e992a0: affinity mask[16]: 5
+thread_masks[6]: 0x560905e992b0: maps mask[16]: 6
+thread_masks[6]: 0x560905e992c0: affinity mask[16]: 6
+thread_masks[7]: 0x560905e992d0: maps mask[16]: 7
+thread_masks[7]: 0x560905e992e0: affinity mask[16]: 7
+thread_masks[8]: 0x560905e992f0: maps mask[16]: 8
+thread_masks[8]: 0x560905e99300: affinity mask[16]: 8
+thread_masks[9]: 0x560905e99310: maps mask[16]: 9
+thread_masks[9]: 0x560905e99320: affinity mask[16]: 9
+thread_masks[10]: 0x560905e99330: maps mask[16]: 10
+thread_masks[10]: 0x560905e99340: affinity mask[16]: 10
+thread_masks[11]: 0x560905e99350: maps mask[16]: 11
+thread_masks[11]: 0x560905e99360: affinity mask[16]: 11
+thread_masks[12]: 0x560905e99370: maps mask[16]: 12
+thread_masks[12]: 0x560905e99380: affinity mask[16]: 12
+thread_masks[13]: 0x560905e99390: maps mask[16]: 13
+thread_masks[13]: 0x560905e993a0: affinity mask[16]: 13
+thread_masks[14]: 0x560905e993b0: maps mask[16]: 14
+thread_masks[14]: 0x560905e993c0: affinity mask[16]: 14
+thread_masks[15]: 0x560905e993d0: maps mask[16]: 15
+thread_masks[15]: 0x560905e993e0: affinity mask[16]: 15
+nr_cblocks: 0
+affinity: SYS
+mmap flush: 1
+comp level: 1
+WARNING: The use of --call-graph=dwarf may require all the user registers, specifying a subset with --user-regs may render DWARF unwinding unreliable, so the minimal registers set (IP, SP) is explicitly forced.
+WARNING: The use of --call-graph=dwarf may require all the user registers, specifying a subset with --user-regs may render DWARF unwinding unreliable, so the minimal registers set (IP, SP) is explicitly forced.
+WARNING: The use of --call-graph=dwarf may require all the user registers, specifying a subset with --user-regs may render DWARF unwinding unreliable, so the minimal registers set (IP, SP) is explicitly forced.
+WARNING: The use of --call-graph=dwarf may require all the user registers, specifying a subset with --user-regs may render DWARF unwinding unreliable, so the minimal registers set (IP, SP) is explicitly forced.
+WARNING: The use of --call-graph=dwarf may require all the user registers, specifying a subset with --user-regs may render DWARF unwinding unreliable, so the minimal registers set (IP, SP) is explicitly forced.
+mmap size 528384B
+threads[553269]: started on cpu1
+threads[553270]: started on cpu2
+threads[553271]: started on cpu3
+threads[553272]: started on cpu4
+threads[553273]: started on cpu5
+threads[553274]: started on cpu6
+threads[553275]: started on cpu7
+threads[553276]: started on cpu8
+threads[553277]: started on cpu9
+threads[553278]: started on cpu10
+threads[553279]: started on cpu11
+threads[553280]: started on cpu12
+threads[553281]: started on cpu13
+threads[553282]: started on cpu14
+threads[553283]: started on cpu15
+threads[553267]: started on cpu0
+
+553268:perf-sync:ready:TSC=14680421314772729
+[ perf record: Woken up 21 times to write data ]
+threads[553267]: samples=1, wakes=1, transferred=2592, compressed=628
+threads[553269]: samples=47, wakes=20, transferred=4908952, compressed=709196
+threads[553270]: samples=1, wakes=2, transferred=91904, compressed=12857
+threads[553271]: samples=1, wakes=2, transferred=189432, compressed=9284
+threads[553272]: samples=1, wakes=2, transferred=24680, compressed=3785
+threads[553273]: samples=6, wakes=4, transferred=616120, compressed=48952
+threads[553274]: samples=1, wakes=2, transferred=204720, compressed=12475
+threads[553275]: samples=1, wakes=2, transferred=16576, compressed=2136
+threads[553276]: samples=1, wakes=2, transferred=233528, compressed=17241
+threads[553277]: samples=3, wakes=2, transferred=5288, compressed=1200
+threads[553278]: samples=1, wakes=2, transferred=528, compressed=305
+threads[553279]: samples=1, wakes=2, transferred=29960, compressed=3232
+threads[553280]: samples=1, wakes=2, transferred=11008, compressed=2149
+threads[553281]: samples=0, wakes=2, written=0
+threads[553282]: samples=1, wakes=2, transferred=27552, compressed=4452
+threads[553283]: samples=1, wakes=2, transferred=584, compressed=268
+failed to write feature HYBRID_TOPOLOGY
+failed to write feature HYBRID_CPU_PMU_CAPS
+[ perf record: Captured and wrote 0.953 MB /home/u183985/Compu_paralela_III/CPAR_GPUs/r005go/data.0/system-wide.perf, compressed (original 6.069 MB, ratio is 7.684) ]

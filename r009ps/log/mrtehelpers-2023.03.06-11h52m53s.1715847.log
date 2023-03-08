@@ -1,0 +1,3 @@
+208 [140544140744448] INFO mrtehelpers.mrteenv <> - Product libs directory: /glob/development-tools/versions/oneapi/2023.0.1/oneapi/vtune/2023.0.0/lib64
+210 [140544140744448] INFO mrtehelpers.mrteenv <> - File mask: amplxe_samplingmrte_clrprof*
+309 [140544140744448] INFO mrtehelpers.mrteenv <> - File name: libamplxe_samplingmrte_clrprof_1.0.so
