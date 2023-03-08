@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="sycl::_V1::detail::platform_impl::get_platforms"
+           is_vectorized="0"
+           self_time="0.000000E+00"
+           total_time="6.120025E-01"
+           trip_counts=""
+           func_instance="201"
+           priority="0"/>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="khrIcdVendorsEnumerateEnv"
+           is_vectorized="0"
+           self_time="0.000000E+00"
+           total_time="3.300000E-01"
+           trip_counts=""
+           func_instance="26"
+           priority="0"/>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="khrIcdOsVendorsEnumerate"
+           is_vectorized="0"
+           self_time="0.000000E+00"
+           total_time="2.100000E-01"
+           trip_counts=""
+           func_instance="47"
+           priority="0"/>
+  <hotspot filename="/home/u183985/Compu_paralela_III/CPAR_GPUs/oneAPI-samples/DirectProgramming/C++SYCL/CombinationalLogic/mandelbrot/src/main.cpp"
+           line_no="52"
+           routine="Execute"
+           is_vectorized="0"
+           self_time="0.000000E+00"
+           total_time="1.120000E-01"
+           trip_counts=""
+           func_instance="106"
+           priority="0"/>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="piEventsWait"
+           is_vectorized="0"
+           self_time="0.000000E+00"
+           total_time="9.599399E-02"
+           trip_counts=""
+           func_instance="130"
+           priority="0"/>
+</IntelParallelAdvisorSummary >

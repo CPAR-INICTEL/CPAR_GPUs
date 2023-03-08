@@ -1,0 +1,5 @@
+Info: Results will be stored at '/home/u183985/Compu_paralela_III/CPAR_GPUs/advi_results_2/e000/pp000/data.0'. See interactive HTML report in '/home/u183985/Compu_paralela_III/CPAR_GPUs/advi_results_2/e000/report'
+Info: Selected accelerator to analyze: Intel(R) Ponte Vecchio XT 448 XVE.
+Info: Baseline Host: Intel(R) Xeon(R) E-2176G CPU @ 3.70GHz, GPU: Intel (R) HD Graphics P630.
+Info: Binary Name: 'mandelbrot'.
+Warning: Skip the unsupported instruction. Performance estimation may be inaccurate.

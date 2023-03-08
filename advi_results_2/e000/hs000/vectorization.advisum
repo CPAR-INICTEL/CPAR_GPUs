@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="_GLOBAL__sub_I_acl_platform.cpp"
+           is_vectorized="0"
+           self_time="1.198827E-02"
+           total_time="1.998715E-02"
+           trip_counts=""
+           func_instance="52"
+           priority="0"/>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="sycl::_V1::detail::Scheduler::GraphBuilder::cleanupCommand"
+           is_vectorized="0"
+           self_time="8.019835E-03"
+           total_time="8.019835E-03"
+           trip_counts=""
+           func_instance="301"
+           priority="0"/>
+  <hotspot filename="/glob/development-tools/versions/oneapi/2023.0.1/oneapi/dev-utilities/2021.8.0/include/stb/stb_image_write.h"
+           line_no="885"
+           routine="stbi_zlib_compress"
+           is_vectorized="0"
+           self_time="7.999261E-03"
+           total_time="7.999261E-03"
+           trip_counts="48629"
+           func_instance="128"
+           priority="0"/>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="_GLOBAL__sub_I_acl_platform.cpp"
+           is_vectorized="0"
+           self_time="7.998876E-03"
+           total_time="7.998876E-03"
+           trip_counts=""
+           func_instance="54"
+           priority="0"/>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="khrIcdVendorsEnumerateEnv"
+           is_vectorized="0"
+           self_time="0.000000E+00"
+           total_time="7.200000E-01"
+           trip_counts=""
+           func_instance="9"
+           priority="0"/>
+</IntelParallelAdvisorSummary >

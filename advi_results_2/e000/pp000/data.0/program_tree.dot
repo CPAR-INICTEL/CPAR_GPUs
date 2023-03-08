@@ -1,0 +1,333 @@
+digraph G {
+
+		2 [label="\n func@0x266b0\nNot Analyzed: Not a Loop", style=dotted]
+		3 [label="\n _start\nNot Analyzed: Not a Loop", style=dotted]
+	3 -> 834
+		834 [label="\n __libc_start_main\nNot Analyzed: Not User Code", style=dotted]
+	834 -> 640
+	834 -> 755
+		755 [label="\n main at main.cpp:73\nNot Analyzed: Not a Loop", style=dotted]
+	755 -> 991
+	755 -> 5
+		5 [label="\n sycl::_V1::queue::queue<int (sycl::_V1::device const&), void> at queue.hpp:126\nNot Analyzed: Not a Loop", style=dotted]
+	5 -> 6
+		6 [label="\n sycl::_V1::detail::select_device\nNot Analyzed: Not User Code", style=dotted]
+	6 -> 7
+		7 [label="\n sycl::_V1::device::get_devices\nNot Analyzed: Not User Code", style=dotted]
+	7 -> 8
+		8 [label="\n sycl::_V1::platform::get_platforms\nNot Analyzed: Not User Code", style=dotted]
+	8 -> 1273
+		1273 [label="\n sycl::_V1::detail::platform_impl::get_platforms\nNot Analyzed: Not User Code", style=dotted]
+	1273 -> 10
+	1273 -> 37
+		37 [label="\n [loop in sycl::_V1::detail::platform_impl::get_platforms]\nNot Analyzed: Not User Code", style=dotted]
+	37 -> 38
+		38 [label="\n sycl::_V1::detail::plugin::call_nocheck<(sycl::_V1::detail::PiApiKind)0, int, __int128, unsigned int*>\nNot Analyzed: Not User Code", style=dotted]
+	38 -> 1000
+	38 -> 39
+		39 [label="\n piPlatformsGet\nNot Analyzed: Not User Code", style=dotted]
+	39 -> 40
+		40 [label="\n clGetPlatformIDs\nNot Analyzed: Not User Code", style=dotted]
+	40 -> 1286
+		1286 [label="\n khrIcdOsVendorsEnumerate\nNot Analyzed: Not User Code", style=dotted]
+	1286 -> 341
+	1286 -> 1284
+		1284 [label="\n khrIcdVendorsEnumerateEnv\nNot Analyzed: Not User Code", style=dotted]
+	1284 -> 43
+		43 [label="\n [loop in khrIcdVendorsEnumerateEnv]\nNot Analyzed: Not User Code", style=dotted]
+	43 -> 160
+		160 [label="\n khrIcdVendorAdd\nNot Analyzed: Not User Code", style=dotted]
+	160 -> 249
+	160 -> 292
+	160 -> 161
+	160 -> 45
+		45 [label="\n khrIcdOsLibraryLoad\nNot Analyzed: Not User Code", style=dotted]
+	45 -> 46
+		46 [label="\n dlopen\nNot Analyzed: Not User Code", style=dotted]
+	46 -> 1296
+		1296 [label="\n _GLOBAL__sub_I_acl_platform.cpp\nNot Analyzed: Not User Code", style=dotted]
+	1296 -> 1297
+		1297 [label="\n [loop in _GLOBAL__sub_I_acl_platform.cpp]\nNot Analyzed: Not User Code", style=dotted]
+	1297 -> 1299
+		1299 [label="\n [loop in _GLOBAL__sub_I_acl_platform.cpp]\nNot Analyzed: Not User Code", style=dotted]
+	1299 -> 247
+		247 [label="\n [loop in _GLOBAL__sub_I_acl_platform.cpp]\nNot Analyzed: Not User Code", style=dotted]
+		161 [label="\n clGetPlatformIDs\nNot Analyzed: Not User Code", style=dotted]
+		292 [label="\n clGetPlatformIDs\nNot Analyzed: Not User Code", style=dotted]
+		249 [label="\n dlclose\nNot Analyzed: Not User Code", style=dotted]
+		341 [label="\n [loop in khrIcdOsVendorsEnumerate]\nNot Analyzed: Not User Code", style=dotted]
+	341 -> 370
+		370 [label="\n khrIcdVendorAdd\nNot Analyzed: Not User Code", style=dotted]
+	370 -> 343
+	370 -> 371
+		371 [label="\n func@0xa9a24\nNot Analyzed: Not User Code", style=dotted]
+		343 [label="\n khrIcdOsLibraryLoad\nNot Analyzed: Not User Code", style=dotted]
+	343 -> 344
+		344 [label="\n dlopen\nNot Analyzed: Not User Code", style=dotted]
+		1000 [label="\n piPlatformsGet\nNot Analyzed: Not User Code", style=dotted]
+	1000 -> 591
+		591 [label="\n [loop in piPlatformsGet]\nNot Analyzed: Not User Code", style=dotted]
+	591 -> 592
+		592 [label="\n zeInit\nNot Analyzed: Not User Code", style=dotted]
+		10 [label="\n sycl::_V1::detail::pi::initialize\nNot Analyzed: Not User Code", style=dotted]
+	10 -> 1288
+		1288 [label="\n __pthread_once_slow\nNot Analyzed: Not User Code", style=dotted]
+	1288 -> 1271
+		1271 [label="\n std::call_once<sycl::_V1::detail::pi::initialize(void)::$_1>(std::once_flag&, sycl::_V1::detail::pi::initialize(void)::$_1&&)::{lambda()#2}::__invoke\nNot Analyzed: Not User Code", style=dotted]
+	1271 -> 12
+		12 [label="\n [loop in std::call_once<sycl::_V1::detail::pi::initialize(void)::$_1>(std::once_flag&, sycl::_V1::detail::pi::initialize(void)::$_1&&)::{lambda()#2}::__invoke]\nNot Analyzed: Not User Code", style=dotted]
+	12 -> 13
+		13 [label="\n sycl::_V1::detail::pi::loadOsLibrary\nNot Analyzed: Not User Code", style=dotted]
+	13 -> 14
+		14 [label="\n dlopen\nNot Analyzed: Not User Code", style=dotted]
+		991 [label="\n Execute at main.cpp:35\nNot Analyzed: Not a Loop", style=dotted]
+	991 -> 822
+	subgraph cluster_loopnest_756 {
+		graph [style=dotted];
+		756
+		label = "Region #13\nBase Time: 0.1078796166, Percent Time: 7.491640041666665\nAcc Time: 0.015022760805882353, Non Acc Time: 0.0080198353\nSpeedup: 7.1810779652271615";
+	subgraph cluster_0_0 {
+		style=filled;
+		color=lightgrey;
+		node [style=filled, color=white];
+		756
+		756 [label="\n [loop in Execute at main.cpp:52]\nunrolls:128"]
+		756 -> 975
+		975 [label="\n MandelParallel::Evaluate at mandel.hpp:225\nNot Analyzed: ", style=dotted]
+		975 -> 976
+		976 [label="\n sycl::_V1::detail::buffer_plain::~buffer_plain at buffer.hpp:60\nNot Analyzed: ", style=dotted]
+		976 -> 977
+		977 [label="\n std::__shared_ptr<sycl::_V1::detail::buffer_impl, (__gnu_cxx::_Lock_policy)2>::~__shared_ptr at shared_ptr_base.h:1169\nNot Analyzed: ", style=dotted]
+		977 -> 978
+		978 [label="\n std::__shared_count<(__gnu_cxx::_Lock_policy)2>::~__shared_count at shared_ptr_base.h:727\nNot Analyzed: ", style=dotted]
+		978 -> 775
+		775 [label="\n std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release at shared_ptr_base.h:148\nNot Analyzed: ", style=dotted]
+		775 -> 776
+		776 [label="\n std::_Sp_counted_ptr_inplace<sycl::_V1::detail::buffer_impl, std::allocator<sycl::_V1::detail::buffer_impl>, (__gnu_cxx::_Lock_policy)2>::_M_dispose\nNot Analyzed: ", style=dotted]
+		776 -> 805
+		805 [label="\n sycl::_V1::detail::SYCLMemObjT::updateHostMemory\nNot Analyzed: ", style=dotted]
+		805 -> 778
+		778 [label="\n std::_Function_handler<void (void), sycl::_V1::detail::SYCLMemObjT::set_final_data(std::function<void (std::function<void (void*)> const&)> const&)::{lambda()#1}>::_M_invoke\nNot Analyzed: ", style=dotted]
+		778 -> 779
+		779 [label="\n std::_Function_handler<void (std::function<void (void*)> const&), sycl::_V1::detail::SYCLMemObjT::handleHostData(void*, unsigned long)::{lambda(std::function<void (void*)> const&)#1}>::_M_invoke\nNot Analyzed: ", style=dotted]
+		779 -> 788
+		788 [label="\n sycl::_V1::detail::SYCLMemObjT::updateHostMemory\nNot Analyzed: ", style=dotted]
+		788 -> 781
+		781 [label="\n sycl::_V1::detail::event_impl::wait\nNot Analyzed: ", style=dotted]
+		781 -> 782
+		782 [label="\n sycl::_V1::detail::event_impl::waitInternal\nNot Analyzed: ", style=dotted]
+		782 -> 783
+		783 [label="\n sycl::_V1::detail::plugin::call_nocheck<(sycl::_V1::detail::PiApiKind)64, int, _pi_event**>\nNot Analyzed: ", style=dotted]
+		783 -> 1004
+		1004 [label="\n piEventsWait\nNot Analyzed: ", style=dotted]
+		1004 -> 784
+		784 [label="\n [loop in piEventsWait]\nNot Analyzed: ", style=dotted]
+		784 -> 1234
+		1234 [label="\n func@0x158174\nNot Analyzed: ", style=dotted]
+		1004 -> 809
+		809 [label="\n [loop in piEventsWait]\nNot Analyzed: ", style=dotted]
+		809 -> 810
+		810 [label="\n _pi_queue::executeAllOpenCommandLists\nNot Analyzed: ", style=dotted]
+		810 -> 811
+		811 [label="\n _pi_queue::executeCommandList\nNot Analyzed: ", style=dotted]
+		811 -> 812
+		812 [label="\n func@0xfe614\nNot Analyzed: ", style=dotted]
+		788 -> 789
+		789 [label="\n sycl::_V1::detail::Scheduler::addCopyBack\nNot Analyzed: ", style=dotted]
+		789 -> 790
+		790 [label="\n sycl::_V1::detail::Command::enqueue\nNot Analyzed: ", style=dotted]
+		790 -> 791
+		791 [label="\n sycl::_V1::detail::MemCpyCommandHost::enqueueImp\nNot Analyzed: ", style=dotted]
+		791 -> 792
+		792 [label="\n sycl::_V1::detail::MemoryManager::copy\nNot Analyzed: ", style=dotted]
+		792 -> 793
+		793 [label="\n sycl::_V1::detail::copyD2H\nNot Analyzed: ", style=dotted]
+		793 -> 794
+		794 [label="\n sycl::_V1::detail::plugin::call_nocheck<(sycl::_V1::detail::PiApiKind)80, _pi_queue*, _pi_mem*, unsigned int, pi_buff_rect_offset_struct*, pi_buff_rect_offset_struct*, pi_buff_rect_region_struct*, unsigned long, unsigned long, unsigned long, unsigned long, char*, unsigned long, _pi_event**, _pi_event**>\nNot Analyzed: ", style=dotted]
+		794 -> 795
+		795 [label="\n piEnqueueMemBufferReadRect\nNot Analyzed: ", style=dotted]
+		795 -> 796
+		796 [label="\n enqueueMemCopyRectHelper\nNot Analyzed: ", style=dotted]
+		796 -> 797
+		797 [label="\n func@0xf7f14\nNot Analyzed: ", style=dotted]
+		805 -> 806
+		806 [label="\n sycl::_V1::detail::Scheduler::removeMemoryObject\nNot Analyzed: ", style=dotted]
+		806 -> 1279
+		1279 [label="\n sycl::_V1::detail::Scheduler::GraphBuilder::decrementLeafCountersForRecord\nNot Analyzed: ", style=dotted]
+		1279 -> 1280
+		1280 [label="\n [loop in sycl::_V1::detail::Scheduler::GraphBuilder::decrementLeafCountersForRecord]\nNot Analyzed: ", style=dotted]
+		1280 -> 807
+		807 [label="\n [loop in sycl::_V1::detail::Scheduler::GraphBuilder::decrementLeafCountersForRecord]\nNot Analyzed: ", style=dotted]
+		807 -> 1282
+		1282 [label="\n sycl::_V1::detail::Scheduler::GraphBuilder::cleanupCommand\nNot Analyzed: ", style=dotted]
+		1282 -> 808
+		808 [label="\n [loop in sycl::_V1::detail::Scheduler::GraphBuilder::cleanupCommand]\nNot Analyzed: ", style=dotted]
+		975 -> 757
+		757 [label="\n sycl::_V1::queue::submit<MandelParallel::Evaluate(sycl::_V1::queue&)::{lambda(sycl::_V1::handler&)#1}> at queue.hpp:299\nNot Analyzed: ", style=dotted]
+		757 -> 758
+		758 [label="\n sycl::_V1::queue::submit_impl\nNot Analyzed: ", style=dotted]
+		758 -> 759
+		759 [label="\n sycl::_V1::detail::queue_impl::submit\nNot Analyzed: ", style=dotted]
+		759 -> 760
+		760 [label="\n sycl::_V1::detail::queue_impl::submit_impl\nNot Analyzed: ", style=dotted]
+		760 -> 761
+		761 [label="\n sycl::_V1::detail::queue_impl::finalizeHandler<sycl::_V1::handler>\nNot Analyzed: ", style=dotted]
+		761 -> 762
+		762 [label="\n sycl::_V1::handler::finalize\nNot Analyzed: ", style=dotted]
+		762 -> 763
+		763 [label="\n sycl::_V1::detail::Scheduler::addCG\nNot Analyzed: ", style=dotted]
+		763 -> 1277
+		1277 [label="\n sycl::_V1::detail::Scheduler::GraphProcessor::enqueueCommand\nNot Analyzed: ", style=dotted]
+		1277 -> 764
+		764 [label="\n [loop in sycl::_V1::detail::Scheduler::GraphProcessor::enqueueCommand]\nNot Analyzed: ", style=dotted]
+		764 -> 765
+		765 [label="\n sycl::_V1::detail::Command::enqueue\nNot Analyzed: ", style=dotted]
+		765 -> 766
+		766 [label="\n sycl::_V1::detail::AllocaCommand::enqueueImp\nNot Analyzed: ", style=dotted]
+		766 -> 767
+		767 [label="\n sycl::_V1::detail::MemoryManager::allocate\nNot Analyzed: ", style=dotted]
+		767 -> 768
+		768 [label="\n sycl::_V1::detail::buffer_impl::allocateMem\nNot Analyzed: ", style=dotted]
+		768 -> 769
+		769 [label="\n sycl::_V1::detail::MemoryManager::allocateMemBuffer\nNot Analyzed: ", style=dotted]
+		769 -> 770
+		770 [label="\n sycl::_V1::detail::MemoryManager::allocateBufferObject\nNot Analyzed: ", style=dotted]
+		770 -> 771
+		771 [label="\n sycl::_V1::detail::memBufferCreateHelper\nNot Analyzed: ", style=dotted]
+		771 -> 772
+		772 [label="\n sycl::_V1::detail::plugin::call_nocheck<(sycl::_V1::detail::PiApiKind)28, _pi_context*, unsigned long, unsigned long, void*, _pi_mem**, unsigned long const*>\nNot Analyzed: ", style=dotted]
+		772 -> 773
+		773 [label="\n piMemBufferCreate\nNot Analyzed: ", style=dotted]
+		773 -> 774
+		774 [label="\n __intel_avx_rep_memcpy\nNot Analyzed: ", style=dotted]
+		label = "offload #13\nBase Time: 0.1078796166, Percent Time: 0.07491640041666665\nAcc Time: 0.015022760805882353, Non Acc Time: 0.0080198353\nSpeedup: 7.1810779652271615";
+	}
+
+	}
+	991 -> 756
+	subgraph cluster_loopnest_992 {
+		graph [style=dotted];
+		992
+		label = "Region #119\nBase Time: 0.03, Percent Time: 2.0833333333333326\nAcc Time: 1.947466541963465e-05, Non Acc Time: 0.0\nSpeedup: 1540.4629221385005";
+	subgraph cluster_1_0 {
+		style=filled;
+		color=lightgrey;
+		node [style=filled, color=white];
+		992
+		992 [label="\n [loop in Execute at main.cpp:61]\nunrolls:57344"]
+		992 -> 993
+		993 [label="\n [loop in Execute at main.cpp:61]\nNot Analyzed: "]
+		993 -> 994
+		994 [label="\n MandelSerial::Evaluate at mandel.hpp:202\nNot Analyzed: ", style=dotted]
+		994 -> 995
+		995 [label="\n [loop in MandelSerial::Evaluate at mandel.hpp:209]\nNot Analyzed: "]
+		995 -> 829
+		829 [label="\n MandelParameters::Point at mandel.hpp:57\nNot Analyzed: ", style=dotted]
+		label = "offload #119\nBase Time: 0.03, Percent Time: 0.020833333333333325\nAcc Time: 1.947466541963465e-05, Non Acc Time: 0.0\nSpeedup: 1540.4629221385005";
+	}
+
+	}
+	991 -> 992
+		822 [label="\n Mandel::WriteImage at mandel.hpp:99\nNot Analyzed: Not a Loop", style=dotted]
+	822 -> 823
+		823 [label="\n stbi_write_png at stb_image_write.h:1161\nNot Analyzed: Not a Loop", style=dotted]
+	823 -> 982
+		982 [label="\n stbi_write_png_to_mem at stb_image_write.h:1074\nNot Analyzed: Not a Loop", style=dotted]
+	982 -> 989
+	subgraph cluster_loopnest_983 {
+		graph [style=dotted];
+
+		983 [label="\n [loop in stbi_write_png_to_mem at stb_image_write.h:1090]\nNot Analyzed: "]
+	983 -> 824
+		824 [label="\n [loop in stbi_write_png_to_mem at stb_image_write.h:1099]\nNot Analyzed: "]
+	824 -> 985
+		985 [label="\n stbiw__encode_png_line at stb_image_write.h:1038\nNot Analyzed: Not a Loop", style=dotted]
+	985 -> 986
+		986 [label="\n [loop in stbiw__encode_png_line at stb_image_write.h:1038]\nNot Analyzed: "]
+	986 -> 825
+		825 [label="\n stbiw__paeth at stb_image_write.h:1029\nNot Analyzed: Not a Loop", style=dotted]
+	}
+	982 -> 983
+		989 [label="\n stbi_zlib_compress at stb_image_write.h:858\nNot Analyzed: Not a Loop", style=dotted]
+	subgraph cluster_loopnest_827 {
+		graph [style=dotted];
+
+		827 [label="\n [loop in stbi_zlib_compress at stb_image_write.h:885]\nNot Analyzed: "]
+	}
+	989 -> 827
+		640 [label="\n [mandelbrot]\nNot Analyzed: Not a Loop", style=dotted]
+	640 -> 641
+		641 [label="\n Execute at main.cpp:35\nNot Analyzed: Not a Loop", style=dotted]
+	641 -> 966
+		966 [label="\n MandelParallel::Evaluate at mandel.hpp:225\nNot Analyzed: Not a Loop", style=dotted]
+	966 -> 967
+	966 -> 642
+		642 [label="\n sycl::_V1::queue::submit<MandelParallel::Evaluate(sycl::_V1::queue&)::{lambda(sycl::_V1::handler&)#1}> at queue.hpp:299\nNot Analyzed: Not a Loop", style=dotted]
+	642 -> 643
+		643 [label="\n sycl::_V1::queue::submit_impl\nNot Analyzed: Not User Code", style=dotted]
+	643 -> 644
+		644 [label="\n sycl::_V1::detail::queue_impl::submit\nNot Analyzed: Not User Code", style=dotted]
+	644 -> 645
+		645 [label="\n sycl::_V1::detail::queue_impl::submit_impl\nNot Analyzed: Not User Code", style=dotted]
+	645 -> 646
+		646 [label="\n sycl::_V1::detail::queue_impl::finalizeHandler<sycl::_V1::handler>\nNot Analyzed: Not User Code", style=dotted]
+	646 -> 647
+		647 [label="\n sycl::_V1::handler::finalize\nNot Analyzed: Not User Code", style=dotted]
+	647 -> 648
+		648 [label="\n sycl::_V1::detail::Scheduler::addCG\nNot Analyzed: Not User Code", style=dotted]
+	648 -> 649
+		649 [label="\n sycl::_V1::detail::Command::enqueue\nNot Analyzed: Not User Code", style=dotted]
+	649 -> 650
+		650 [label="\n sycl::_V1::detail::ExecCGCommand::enqueueImp\nNot Analyzed: Not User Code", style=dotted]
+	650 -> 651
+		651 [label="\n sycl::_V1::detail::enqueueImpKernel\nNot Analyzed: Not User Code", style=dotted]
+	651 -> 652
+		652 [label="\n sycl::_V1::detail::ProgramManager::getOrCreateKernel\nNot Analyzed: Not User Code", style=dotted]
+	652 -> 1275
+		1275 [label="\n sycl::_V1::detail::ProgramManager::getBuiltPIProgram\nNot Analyzed: Not User Code", style=dotted]
+	1275 -> 653
+		653 [label="\n [loop in sycl::_V1::detail::ProgramManager::getBuiltPIProgram]\nNot Analyzed: Not User Code", style=dotted]
+	653 -> 654
+		654 [label="\n sycl::_V1::detail::ProgramManager::build\nNot Analyzed: Not User Code", style=dotted]
+	654 -> 655
+		655 [label="\n sycl::_V1::detail::plugin::call_nocheck<(sycl::_V1::detail::PiApiKind)42, _pi_program*, int, _pi_device** const, char const*, __int128, __int128>\nNot Analyzed: Not User Code", style=dotted]
+	655 -> 656
+		656 [label="\n piProgramBuild\nNot Analyzed: Not User Code", style=dotted]
+	656 -> 657
+		657 [label="\n func@0x1494f4\nNot Analyzed: Not User Code", style=dotted]
+		967 [label="\n sycl::_V1::detail::buffer_plain::~buffer_plain at buffer.hpp:60\nNot Analyzed: Not a Loop", style=dotted]
+	967 -> 968
+		968 [label="\n std::__shared_ptr<sycl::_V1::detail::buffer_impl, (__gnu_cxx::_Lock_policy)2>::~__shared_ptr at shared_ptr_base.h:1169\nNot Analyzed: Not a Loop", style=dotted]
+	968 -> 969
+		969 [label="\n std::__shared_count<(__gnu_cxx::_Lock_policy)2>::~__shared_count at shared_ptr_base.h:727\nNot Analyzed: Not a Loop", style=dotted]
+	969 -> 733
+		733 [label="\n std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release at shared_ptr_base.h:148\nNot Analyzed: Not a Loop", style=dotted]
+	733 -> 734
+		734 [label="\n std::_Sp_counted_ptr_inplace<sycl::_V1::detail::buffer_impl, std::allocator<sycl::_V1::detail::buffer_impl>, (__gnu_cxx::_Lock_policy)2>::_M_dispose\nNot Analyzed: Not User Code", style=dotted]
+	734 -> 735
+		735 [label="\n sycl::_V1::detail::SYCLMemObjT::updateHostMemory\nNot Analyzed: Not User Code", style=dotted]
+	735 -> 736
+		736 [label="\n std::_Function_handler<void (void), sycl::_V1::detail::SYCLMemObjT::set_final_data(std::function<void (std::function<void (void*)> const&)> const&)::{lambda()#1}>::_M_invoke\nNot Analyzed: Not User Code", style=dotted]
+	736 -> 737
+		737 [label="\n std::_Function_handler<void (std::function<void (void*)> const&), sycl::_V1::detail::SYCLMemObjT::handleHostData(void*, unsigned long)::{lambda(std::function<void (void*)> const&)#1}>::_M_invoke\nNot Analyzed: Not User Code", style=dotted]
+	737 -> 738
+		738 [label="\n sycl::_V1::detail::SYCLMemObjT::updateHostMemory\nNot Analyzed: Not User Code", style=dotted]
+	738 -> 739
+		739 [label="\n sycl::_V1::detail::event_impl::wait\nNot Analyzed: Not User Code", style=dotted]
+	739 -> 740
+		740 [label="\n sycl::_V1::detail::event_impl::waitInternal\nNot Analyzed: Not User Code", style=dotted]
+	740 -> 741
+		741 [label="\n sycl::_V1::detail::plugin::call_nocheck<(sycl::_V1::detail::PiApiKind)64, int, _pi_event**>\nNot Analyzed: Not User Code", style=dotted]
+	741 -> 1002
+		1002 [label="\n piEventsWait\nNot Analyzed: Not User Code", style=dotted]
+	1002 -> 742
+		742 [label="\n [loop in piEventsWait]\nNot Analyzed: Not User Code", style=dotted]
+	742 -> 743
+		743 [label="\n _pi_queue::executeAllOpenCommandLists\nNot Analyzed: Not User Code", style=dotted]
+	743 -> 744
+		744 [label="\n _pi_queue::executeCommandList\nNot Analyzed: Not User Code", style=dotted]
+	744 -> 745
+		745 [label="\n func@0xfe614\nNot Analyzed: Not User Code", style=dotted]
+	label="Intel Advisor, build 613505";
+
+}
