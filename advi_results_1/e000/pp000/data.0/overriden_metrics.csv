@@ -1,0 +1,65 @@
+region_id,estimation_id,overriden_name,overriden_value,specified_by,original_value
+546,0,dependent_iterations_distance,inf,assumed,inf
+546,0,has_dependency,False,assumed,True
+546,0,dependency_type,Parallel: Assumed,assumed,
+546,0,dependency_key,parallel_assumed,assumed,
+459,0,dependent_iterations_distance,inf,assumed,inf
+459,0,has_dependency,False,assumed,True
+459,0,dependency_type,Parallel: Assumed,assumed,
+459,0,dependency_key,parallel_assumed,assumed,
+699,0,dependent_iterations_distance,inf,assumed,inf
+699,0,has_dependency,False,assumed,True
+699,0,dependency_type,Parallel: Assumed,assumed,
+699,0,dependency_key,parallel_assumed,assumed,
+700,0,dependent_iterations_distance,inf,assumed,inf
+700,0,has_dependency,False,assumed,True
+700,0,dependency_type,Parallel: Assumed,assumed,
+700,0,dependency_key,parallel_assumed,assumed,
+574,0,dependent_iterations_distance,inf,assumed,inf
+574,0,has_dependency,False,assumed,True
+574,0,dependency_type,Parallel: Assumed,assumed,
+574,0,dependency_key,parallel_assumed,assumed,
+705,0,dependent_iterations_distance,inf,assumed,inf
+705,0,has_dependency,False,assumed,True
+705,0,dependency_type,Parallel: Assumed,assumed,
+705,0,dependency_key,parallel_assumed,assumed,
+706,0,dependent_iterations_distance,inf,assumed,inf
+706,0,has_dependency,False,assumed,True
+706,0,dependency_type,Parallel: Assumed,assumed,
+706,0,dependency_key,parallel_assumed,assumed,
+551,0,dependent_iterations_distance,inf,assumed,inf
+551,0,has_dependency,False,assumed,True
+551,0,dependency_type,Parallel: Assumed,assumed,
+551,0,dependency_key,parallel_assumed,assumed,
+561,0,dependent_iterations_distance,inf,assumed,inf
+561,0,has_dependency,False,assumed,True
+561,0,dependency_type,Parallel: Assumed,assumed,
+561,0,dependency_key,parallel_assumed,assumed,
+52,0,dependent_iterations_distance,inf,assumed,inf
+52,0,has_dependency,False,assumed,True
+52,0,dependency_type,Parallel: Assumed,assumed,
+52,0,dependency_key,parallel_assumed,assumed,
+402,0,dependent_iterations_distance,inf,assumed,inf
+402,0,has_dependency,False,assumed,True
+402,0,dependency_type,Parallel: Assumed,assumed,
+402,0,dependency_key,parallel_assumed,assumed,
+228,0,dependent_iterations_distance,inf,assumed,inf
+228,0,has_dependency,False,assumed,True
+228,0,dependency_type,Parallel: Assumed,assumed,
+228,0,dependency_key,parallel_assumed,assumed,
+58,0,dependent_iterations_distance,inf,assumed,inf
+58,0,has_dependency,False,assumed,True
+58,0,dependency_type,Parallel: Assumed,assumed,
+58,0,dependency_key,parallel_assumed,assumed,
+952,0,dependent_iterations_distance,inf,assumed,inf
+952,0,has_dependency,False,assumed,True
+952,0,dependency_type,Parallel: Assumed,assumed,
+952,0,dependency_key,parallel_assumed,assumed,
+953,0,dependent_iterations_distance,inf,assumed,inf
+953,0,has_dependency,False,assumed,True
+953,0,dependency_type,Parallel: Assumed,assumed,
+953,0,dependency_key,parallel_assumed,assumed,
+174,0,dependent_iterations_distance,inf,assumed,inf
+174,0,has_dependency,False,assumed,True
+174,0,dependency_type,Parallel: Assumed,assumed,
+174,0,dependency_key,parallel_assumed,assumed,
